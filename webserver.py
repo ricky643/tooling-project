@@ -24,4 +24,4 @@ def userJson():
 if __name__ == '__main__':
     # Looks for http traffic on port 8000 via running  the flask app
     PORT = 8000 
-    app.run(port=PORT, debug=True)
+    app.run(host='0.0.0.0', port=PORT, debug=True)
