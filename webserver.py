@@ -14,11 +14,20 @@ def hello():
 def userJson():
 
     data = request.get_json()
+    
+    #retrieve post data
+    username = data.form.get('username')
+    password = data.form.get('password')
 
-    username = data.get('username')
-    password = data.get('password')
-
+    #declare
+    #api code    
+    #dashboard code
+    #menu code
+    
     return jsonify({'result': 'Success', 'username': username, 'password': password})
+
+    #user in database in toke
+    #or create token when they login each time
 
 
 if __name__ == '__main__':
